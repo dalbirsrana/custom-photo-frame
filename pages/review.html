@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script src="../js/review.js" defer></script>
+    <title>FotoFrame: Review and Ratings</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png">
+        </div>
+        <nav class="topnav">
+            <ul class="navList">
+                <li class="link1"><a href="../index.html">Home</a></li>
+                <li class="link2"><a href="contactus.html">Contact Us</a></li>
+                <li class="link3"><a href="#">Review & Rating</a></li>
+                <li class="link4"><a href="customFrame.html">Custom Framing</a></li>
+                <li class="link5"><a href="aboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="review-page">
+        <section>
+            <div class="sec-head">
+                <h1>Review and Rating</h1>
+            </div>
+            <div class="sec-content">
+                <div class="sec-review">
+                    <p>Write a review of our work and share your opinions with others.</p>
+                    <form class="form-review">
+                        <div class="form-group">
+                            <label for="idRatings">
+                                On a scale of 1 to 5 stars, with 5 stars being the best, <br>
+                                <strong>How do you rate our work?</strong>
+                            </label>
+                            <select name="ratings" id="idRatings" required>
+                                <option value="5">5 Star</option>
+                                <option value="4">4 Star</option>
+                                <option value="3">3 Star</option>
+                                <option value="2">2 Star</option>
+                                <option value="1">1 Star</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="idReview"><strong>Type your review in the space below</strong></label>
+                            <textarea name="review" id="idReview" required cols="30" rows="5"></textarea>
+                            <span class="help-text"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="review_name"><strong>Name</strong></label>
+                            <input type="text" id="review_name" placeholder="Enter Name" required>
+                            <span class="help-text"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="review_email"><Strong>E-mail</Strong></label>
+                            <input type="email" id="review_email" placeholder="Enter E-mail" required>
+                            <span class="help-text"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Submit" id="reviewSubmit">
+                            <input type="reset" value="Clear">
+                        </div>
+                    </form>
+                </div>
+                <div class="sec-review-display">
+                    <div id="showReview"></div>
+                </div>
+            </div>
+        </section>    
+    </main>
+    <footer>
+        <p>
+            Copyright © 2019 FotoFrame.com. All rights reserved.<br />
+            Site Design & Developed by Dalbir Singh
+        </p>
+    </footer>
+</body>
+
+</html>

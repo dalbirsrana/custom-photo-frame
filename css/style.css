@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+/* Font from  Google Fonts https://fonts.google.com/specimen/Open+Sans */
+
+/*---------------------------------------------------------------
+## Normalize
+----------------------------------------------------------------*/
+html {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+  
+body {
+  background-color: #fff;
+  margin: 0;
+  color: #222222;
+  font-family: "Open Sans", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: #c6e4f1;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: #1488b9;
+}
+
+a:visited {
+  color: #1488b9;
+}
+
+a:hover,
+a:active {
+  color: #0f668b;
+  outline: 0;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: thin;
+  outline-style: dotted;
+  text-decoration: underline;
+}
+
+img {
+  border-style: none;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+}
+  
+/*---------------------------------------------------------------
+## Typography
+----------------------------------------------------------------*/ 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: #062429;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #062429;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0.5rem;
+}
+
+/*---------------------------------------------------------------
+## Master Page Layout
+----------------------------------------------------------------*/
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px auto 100px;
+}
+
+header, footer, main section {
+  padding: 1rem 10rem 3rem 10rem;
+  width: auto;
+}
+
+header {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+header {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row nowrap;
+  height: 80px;
+  background-color: #062429;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  flex-basis: 200px;
+  padding-top: 10px;
+}
+
+.topnav {
+flex-grow: 1;
+flex-shrink: 1;
+}
+
+.logo img {
+  height: 60px;
+}
+
+/* Navigation */
+.navList {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  align-content: center;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+
+}
+
+.navList li {
+  display: inline-block;
+  margin: 0 16px;
+  line-height: 1.8rem;
+}
+
+.navList a:hover {
+  color: #cdf0ff;
+  border-bottom-color: #cdf0ff;
+}
+
+.navList a {
+  color: rgb(119, 255, 255);
+  border-bottom: 2px solid rgb(2, 101, 121);
+  padding: 4px 0;
+}
+
+
+/*------------------------------------------------------------
+## main section
+--------------------------------------------------------------*/
+.sec-head h1 {
+  text-align: center;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #06242911;
+}  
+
+.sec-content-col-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.sec-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+} 
+
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+
+footer {
+  min-height: 100px;
+  background-color: #062429;
+  color: #c6e4f1;
+}
+
+footer p {
+  font-size: 80%;
+}
+
+
+/*------------------------------------------------------------
+## Home page 
+--------------------------------------------------------------*/
+
+#front-page .hero-section {
+  height: calc(100vh - 100px);
+  background-image: url(../images/background.jpg);   /*Photo by Nicolas Bichon on Unsplash */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  background: #00000099;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#front-page Section {
+  min-height: 10rem;
+  text-align: center;
+}
+
+.hero-caption {
+  padding-top: 15vh;
+  max-width: 60rem;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.hero-caption h1 {
+  font-size: 3rem;
+  color: #f3ff60;
+}
+
+.hero-caption p {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  color: #cdf0ff;
+}
+
+/*------------------------------------------------------------
+## About Us Page
+--------------------------------------------------------------*/
+.floatLeft {
+  float: left;
+  margin: 3rem;
+}
+
+.floatLeft::after {
+  content:'';
+  clear: both;
+}
+
+.floatRight {
+  float: right;
+  margin: 3rem;
+}
+
+.floatRight::after {
+  content:'';
+  clear: both;
+}
+
+/*------------------------------------------------------------
+## Contact Us Page
+--------------------------------------------------------------*/
+.sec-content  .sec-address {
+    flex-basis: 30%;
+    text-align: left;
+  }
+
+.sec-content .sec-form {
+  flex-basis: 30%;
+  text-align: left;
+}
+
+#idThanks {
+  color: #75C711;
+  font-size: 20px;
+}
+
+.form-contactus {
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-contactus input[type="submit"] {
+  width: 39%;
+  margin-right: 10%;
+}
+.form-contactus input[type="reset"] {
+  width: 39%;
+  margin-left: 10%;
+}
+
+#label_security {
+  width: 50px;
+  display: inline-block;
+}
+
+
+/*------------------------------------------------------------
+## Review and Rating Page
+--------------------------------------------------------------*/
+.sec-review-display {
+  flex-basis: 35%;
+}
+
+.sec-review {
+  flex-basis: 35%;
+}
+
+#showReview p {
+  border: thin Solid #cccccc;
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+
+.form-review {
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-review input[type="submit"] {
+  width: 39%;
+  margin-right: 10%;
+}
+
+.form-review input[type="reset"] {
+  width: 39%;
+  margin-left: 10%;
+}
+
+.form-review select {
+  border: 1px solid #75C711;
+}
+
+
+/*------------------------------------------------------------
+##  Custom photo frame page
+--------------------------------------------------------------*/
+.page-cpf {
+  min-height: 100vh;
+}
+
+.sec-selections {
+  flex-basis: 40%;
+}
+
+.sec-selections h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.sec-selections > div {
+  margin-bottom: 1.5rem;
+}
+
+.sec-selections ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+} 
+
+.sec-selections ul > li {
+  margin-right: 1rem;
+  padding: 1px;
+  border: 3px solid #ffffff;
+  cursor: pointer;
+  line-height: 0.8;
+}
+
+.sec-selections ul > li:last-child {
+  margin-right: 0;
+}
+
+.sec-frame div {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+.sec-text label {
+  margin-right: 1rem;
+}
+
+#canvasFrGr, #canvasBkGr, #canvasText {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#canvasBkGr {
+  z-index: 0;
+}
+
+#canvasFrGr {
+  z-index: 1;
+}
+
+#canvasText {
+  z-index: 2;
+}
+
+
+/*--------------------------------------------------------------
+## Forms
+--------------------------------------------------------------*/
+.form-group {
+  margin-top: 1rem;
+}
+
+label {
+  font-weight: 400;
+  opacity: 1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="color"],
+select,
+textarea {
+  background: #fff;
+  border: solid 1px #bbbbbb;
+  box-sizing: border-box;
+  outline: none;
+  padding: 0.5rem;
+  outline-offset: 0;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #1488b9;
+  outline: thin solid #1488b926;
+  outline-offset: -4px;
+}
+
+input[type="color"]{
+  height: 2rem;
+  padding: 0.3rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+input:required + .help-text::before,
+textarea:required + .help-text::before {
+  content: '*Required';
+  font-size: 80%;
+}
+
+input:optional + .help-text::before,
+textarea:optional + .help-text::before {
+  content: '*Optional';
+  font-size: 80%;
+}
+
+input:valid, 
+textarea:valid {
+  border-color: #75C711;
+}
+
+input:invalid,
+textarea:invalid {
+  border-color: #c0011b;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  transition: background 150ms ease-in-out;
+  background: #1991c5;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  outline: none;
+  padding: 0.4rem 2rem;
+  text-decoration: none;    
+  vertical-align: bottom;
+  line-height: 1.8;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background: #007bb4;
+  cursor: pointer;
+}
+
+button:visited,
+input[type="button"]:visited,
+input[type="reset"]:visited,
+input[type="submit"]:visited {
+  color: #acf2ff;
+  text-decoration: none;
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  background: #007bb4;
+  outline: thin dotted;
+  outline-offset: -4px;
+}
