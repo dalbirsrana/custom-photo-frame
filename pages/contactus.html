@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="../js/main.js" defer></script>
+    <title>FotoFrame: Contact Us Page</title>
+</head>
+
+<body id="contactUs">
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png">
+        </div>
+        <nav class="topnav">
+            <ul class="navList">
+                <li class="link1"><a href="../index.html">Home</a></li>
+                <li class="link2"><a href="#">Contact Us</a></li>
+                <li class="link3"><a href="review.html">Review & Rating</a></li>
+                <li class="link4"><a href="customFrame.html">Custom Framing</a></li>
+                <li class="link5"><a href="aboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page-contactus">
+        <section>
+            <div class="sec-head">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="sec-content">
+                <div class="sec-form">
+                    <form class="form-contactus">
+                        <div class="form-group">
+                            <label for="label_name"><strong>Name</strong></label>
+                            <input type="text" id="label_name" placeholder="Enter Name" required>
+                            <span class="help-text"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="label_email"><Strong>E-mail</Strong></label>
+                            <input type="email" id="label_email" placeholder="Enter E-mail" required>
+                            <span class="help-text"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="label_mobile"><strong>Mobile</strong></label>
+                            <input type="tel" id="label_mobile" placeholder="Enter your Mobile Number">
+                            <span class="help-text"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="label_question"><strong>Question</strong></label>
+                            <textarea id="label_question"></textarea>
+                            <span class="help-text"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="label_security">
+                                <strong>Please pass the Security question</strong><br />
+                                <span id="idRandNum1"></span> + <span id="idRandNum2"></span> =
+                                <input type="text" id="label_security">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Submit" id="idSubmit">
+                            <input type="reset" value="Clear">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="sec-address">
+                    <h3>Write to Us</h3>
+                    <address>
+                        <!-- <p><strong>Address:</strong></p> -->
+                        <p>33324, 99Ave<br>
+                            Surrey, BC<br>
+                            Canada</p>
+                    </address>
+                    <h3>Call Us</h3>
+                    <p>Toll-Free: 1-866-333-xxxx<br />
+                        Phone: 630-999-xxxx</p>
+                    <p>&nbsp;</p>
+                    <p id="idThanks"></p>
+                </div>
+
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>
+            Copyright © 2019 FotoFrame.com. All rights reserved.<br />
+            Site Design & Developed by Dalbir Singh
+        </p>
+    </footer>
+</body>
+
+</html>

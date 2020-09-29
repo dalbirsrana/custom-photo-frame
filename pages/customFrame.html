@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script src="../js/main.js" defer></script>
+    <title>FotoFrame: Custom Photo Frame</title>
+</head>
+
+<body id="cus_Frame">
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png">
+        </div>
+        <nav class="topnav">
+            <!-- Top Navigation -->
+            <ul class="navList">
+                <li class="link1"><a href="../index.html">Home</a></li>
+                <li class="link2"><a href="contactus.html">Contact Us</a></li>
+                <li class="link3"><a href="review.html">Review & Rating</a></li>
+                <li class="link4"><a href="#">Custom Framing</a></li>
+                <li class="link5"><a href="aboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page-cpf">
+        <section>
+            <div class="sec-head">
+                <h1>Custom Photo Frame</h1>
+            </div>
+            <div class="sec-content-col-2">
+                <div class="sec-selections">
+
+                    <div class="sec-pictures">
+                        <h3>Select Picture</h3>
+                        <ul class="picture-list">
+                            <li class="pic1"><img id="idPic1" data-src="pic1.jpg"
+                                    src="../images/thumbnail/pic1_100x100.jpg" alt=""></li>
+                            <!-- Photo by Dalbir Singh on colorclicks99.com -->
+                            <li class="pic2"><img id="idPic2" data-src="pic2.jpg"
+                                    src="../images/thumbnail/pic2_100x100.jpg" alt=""></li>
+                            <!-- Photo by Dalbir Singh on colorclicks99.com -->
+                            <li class="pic3"><img id="idPic3" data-src="pic3.jpg"
+                                    src="../images/thumbnail/pic3_100x100.JPG" alt=""></li>
+                            <!-- Photo by Dalbir Singh on colorclicks99.com -->
+                            <li class="pic4"><img id="idPic4" data-src="pic4.jpg"
+                                    src="../images/thumbnail/pic4_100x100.jpg" alt=""></li>
+                            <!-- Photo by Dalbir Singh on colorclicks99.com -->
+                        </ul>
+                    </div>
+
+                    <div class="sec-frames">
+                        <h3>Select frame</h3>
+                        <ul class="frame-list">
+                            <li class="frame1"><img id="idFrame1" data-src="frame-1.png"
+                                    src="../images/thumbnail/frame-1_100x100.png" alt="frame 1"></li>
+                            <!-- photo from https://www.publicdomainpictures.net/en/view-image.php?image=42647&picture=old-wood-frame -->
+
+                            <li class="frame2"><img id="idFrame2" data-src="frame-2.png"
+                                    src="../images/thumbnail/frame-2_100x100.png" alt="frame 2"></li>
+                            <!-- photo by "Wood Frame Background Design" on transparentpng.com (http://www.transparentpng.com//details/wood-frame-background-design_23184.html) -->
+
+                            <li class="frame3"><img id="idFrame3" data-src="frame-3.png"
+                                    src="../images/thumbnail/frame-3_100x100.png" alt="frame 3"></li>
+                            <!-- Photo created by Dalbir Singh using Photoshop -->
+
+                            <li class="frame4"><img id="idFrame4" data-src="frame-4.png"
+                                    src="../images/thumbnail/frame-4_100x100.png" alt="frame 4"></li>
+                            <!-- photo from https://www.publicdomainpictures.net/en/view-image.php?image=42647&picture=old-wood-frame -->
+                        </ul>
+                    </div>
+
+
+                    <div class="sec-text">
+                        <div class="form-group">
+                            <h3>Enter text to insert on picture</h3>
+                            <input type="text" name="textLine" id="idTextLine">
+                        </div>
+                        <div class="form-group">
+                            <label>Position Text: </label>
+                            <label for="posTop">
+                                <input type="radio" name="pos" id="posTop" checked="checked">Top
+                            </label>
+                            <label for="posCenter">
+                                <input type="radio" name="pos" id="posCenter">Center
+                            </label>
+                            <label for="posBottom">
+                                <input type="radio" name="pos" id="posBottom">Bottom
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="idTextColor">Text Colour:</label>
+                            <input type="color" name="textColor" id="idTextColor">   
+                        </div>
+                    </div>
+                </div>
+                <div class="sec-frame">
+                    <div>
+                        <canvas id="canvasFrGr" width="600px" height="600px"></canvas>
+                        <canvas id="canvasBkGr" width="600px" height="600px"></canvas>
+                        <canvas id="canvasText" width="600px" height="600px"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Copyright © 2019 FotoFrame.com. All rights reserved.<br />
+            Site Design & Developed by Dalbir Singh
+        </p>
+    </footer>
+</body>
+
+</html>
